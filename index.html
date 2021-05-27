@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+  <head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/faicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+      <header class="main">
+        <div class="menu">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="logotip" class="logo">
+          <ul class="menu-list">
+            <li class="menu-list-items"><a href="#">СТУДИЯ</a></li>
+            <li class="menu-list-items"><a href="#">КЛИЕНТЫ</a></li>
+            <li class="menu-list-items"><a href="catalog.html">МАГАЗИН</a></li>
+            <li class="menu-list-items"><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+          <div class="cart">
+            <img src="img/cart-icon.svg" alt="cart" class="cart-icon">
+            <a href="#" class="cart-text">КОРЗИНА</a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="slider">
+          <div class="slide-1">
+            <div class="slide-1-text">
+              <p class="slide-1-heading">Долго, дорого, скрупулезно</p>
+              <p class="slide-1-subtitle">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <button class="slide-1-button">УЗНАТЬ БОЛЬШЕ</button>
+            </div>
+            <img src="img/nerds-index-slide1.png" width="760" height="430" alt="slide1" class="slide_1-img">
+            <div class="slider-nav">
+              <input type="radio" name="radio-btn">
+              <input type="radio" name="radio-btn">
+              <input type="radio" name="radio-btn">
+            </div>
+          </div>
+        </section>
+        <section class="offers">
+          <div class="offers-item">
+            <img src="img/offers/offers-1.jpg" width="300" height="146" alt="illustration-1" class="offers-item-img">
+            <p class="offers-item-heading">ВЕБ-САЙТЫ</p>
+            <p class="offers-item-subtitle">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <button class="offers-item-button offers-item-button-red">заказать</button>
+          </div>
+          <div class="offers-item">
+            <img src="img/offers/offers-2.svg" width="300" height="146" alt="illustration-2" class="offers-item-img">
+            <p class="offers-item-heading">ПРИЛОЖЕНИЯ</p>
+            <p class="offers-item-subtitle">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <button class="offers-item-button offers-item-button-green">заказать</button>
+          </div>
+          <div class="offers-item">
+            <img src="img/offers/offers-3.svg" width="300" height="146" alt="illustration-3" class="offers-item-img">
+            <p class="offers-item-heading">ПРЕЗЕНТАЦИЯ</p>
+            <p class="offers-item-subtitle">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <button class="offers-item-button offers-item-button-yellow">заказать</button>
+          </div>
+        </section>
+        <section class="about-us">
+          <div class="about-us-text">
+            <p class="about-us-heading">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+            <p class="about-us-subtitle">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <p class="about-us-offers">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
+            <ul class="about-us-offers-items">
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android	</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+          <div class="about-us-achiev">
+            <img src="img/nerds-illustration.png" width="360" height="208" alt="nerds-illustration-1" class="about-us-achiev-img">
+            <p class="about-us-achiev-heading">с 2004 года Любим точность во всем:</p>
+            <div class="about-us-achiev-items">
+              <div class="about-us-achiev-item">
+                <p class="about-us-achiev-item-heading">146</p>
+                <p class="about-us-achiev-item-subtitle">Уровень самоотдачи</p>
+              </div>
+              <div class="about-us-achiev-item">
+                <p class="about-us-achiev-item-heading">100</p>
+                <p class="about-us-achiev-item-subtitle">Соблюдение сроков</p>
+              </div>
+              <div class="about-us-achiev-item">
+                <p class="about-us-achiev-item-heading">50</p>
+                <p class="about-us-achiev-item-subtitle">Минимальная предоплата</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="partners">
+          <img src="img/partners/html_academy.svg" width="200" height="68" alt="html_academy" class="partners-img">
+          <img src="img/partners/borodinski.png" width="209" height="90" alt="borodinski" class="partners-img">
+          <img src="img/partners/pink.png" width="185" height="52" alt="pink" class="partners-img">
+          <img src="img/partners/mishka.png" width="173" height="84" alt="mishka" class="partners-img">
+        </section>
+        <section class="contacts">
+          <img src="img/map 1.png" width="1440" height="416" alt="map">
+          <img src="img/map-marker 1.png" width="230" height="190" alt="map-marker">
+          <div class="information">
+            <p class="location-heading">NЁRDS DESIGN STUDIO</p>
+            <p class="location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
+            <p class="phone-numbers">тел. +7 (812) 275-75-75</p> 
+            <button class="location-but">НАПИШИТЕ НАМ</button>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="social-networks">
+          <img src="img/vk.svg" alt="vk" class="social-networks-item">
+          <img src="img/facebook.svg" alt="facebook" class="social-networks-item">
+          <img src="img/instagram.svg" alt="instagram" class="social-networks-item">
+        </div>
+        <div class="footer-text">
+          <p class="footer-heading">Давайте дружить, это выгодно!</p>
+          <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </footer>
   </body>
 </html>
