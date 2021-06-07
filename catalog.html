@@ -9,9 +9,9 @@
     <title>Нёрдс</title>
 </head>
 <body>
-    <header class="main">
+    <header class="main main-catalog">
         <div class="menu">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="logotip" class="logo">
+          <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="logotip" class="logo"></a>
           <ul class="menu-list">
             <li class="menu-list-items"><a href="#">СТУДИЯ</a></li>
             <li class="menu-list-items"><a href="#">КЛИЕНТЫ</a></li>
@@ -45,19 +45,19 @@
             <div class="grid-view-box">
               <p class="product-filter-text">СЕТКА:</p>
               <ul class="grid-view">
-                  <li class="grid-view-item"><input type="radio"><p>Адаптивная</p></li>
-                  <li class="grid-view-item"><input type="radio"><p>Фиксированная</p></li>
-                  <li class="grid-view-item"><input type="radio"><p>Резиновая</p></li>
+                  <li class="grid-view-item"><input class="filter-input-radio-hidden  filter-input-radio" id="filter-input-radio1" type="radio"><label for="filter-input-radio1">Адаптивная</label></li>
+                  <li class="grid-view-item"><input class="filter-input-radio-hidden  filter-input-radio" id="filter-input-radio2" type="radio"><label for="filter-input-radio2">Фиксированная</label></li>
+                  <li class="grid-view-item"><input class="filter-input-radio-hidden  filter-input-radio" id="filter-input-radio3" type="radio"><label for="filter-input-radio3">Резиновая</label></li>
               </ul>
             </div>
             <div class="product-features-box">
               <p class="product-filter-text">ОСОБЕННОСТИ:</p>
               <ul class="product-features">
-                  <li class="product-features-item"><input type="checkbox"><p>Слайдер</p></li>
-                  <li class="product-features-item"><input type="checkbox"><p>Блок преимуществ</p></li>
-                  <li class="product-features-item"><input type="checkbox"><p>Новости</p></li>
-                  <li class="product-features-item"><input type="checkbox"><p>Галерея</p></li>
-                  <li class="product-features-item"><input type="checkbox"><p>Корзина</p></li>
+                  <li class="product-features-item"><input class="filter-input-checkbox" type="checkbox" id="filter-input-checkbox1"><label for="filter-input-checkbox1">Слайдер</label></li>
+                  <li class="product-features-item"><input class="filter-input-checkbox" type="checkbox" id="filter-input-checkbox2"><label for="filter-input-checkbox2">Блок преимуществ</p></li>
+                  <li class="product-features-item"><input class="filter-input-checkbox" type="checkbox" id="filter-input-checkbox3"><label for="filter-input-checkbox3">Новости</label></li>
+                  <li class="product-features-item"><input class="filter-input-checkbox" type="checkbox" id="filter-input-checkbox4"><label for="filter-input-checkbox4">Галерея</label></li>
+                  <li class="product-features-item"><input class="filter-input-checkbox" type="checkbox" id="filter-input-checkbox5"><label for="filter-input-checkbox5">Корзина</label></li>
               </ul>
             </div>
             <button class="product-filter-but">ПОКАЗАТЬ</button>
@@ -66,11 +66,11 @@
             <div class="product-sorting">
               <p class="product-sorting-heading">СОРТИРОВАТЬ:</p>
               <ul class="sorting-option">
-                <li class="sorting-option-item sorting-option-active">ПО ЦЕНЕ</li>
-                <li class="sorting-option-item">ПО ТИПУ</li>
-                <li class="sorting-option-item">ПО НАЗВАНИЮ</li>
-                <li></li>
-                <li></li>
+                <li class="sorting-option-item sorting-option-active"><a href="#">ПО ЦЕНЕ</a></li>
+                <li class="sorting-option-item"><a href="#">ПО ТИПУ</a></li>
+                <li class="sorting-option-item"><a href="#">ПО НАЗВАНИЮ</a></li>
+                <li class="sorting-option-waning"><a href="#">⯆</a></li>
+                <li class="sorting-option-increase"><a href="#">⯅</a></li>
               </ul>
             </div>
             <div class="product-list">
@@ -80,23 +80,23 @@
                   <div></div>
                   <div></div>
                 </div>
-                <img src="img/img-sedona 1.png" width="360" height="580" alt="" class="product-item-img">
+                <img src="img/img-sedona.png" width="360" height="580" alt="" class="product-item-img">
                 <div class="product-item-info">
                     <p class="product-item-info-heading">SEDONA</p>
                     <p class="product-item-info-subtitle">Информационный сайт для туристов</p>
                     <button class="product-item-info-price">9 900 ₽</button>
                 </div>
-              </div>  
+              </div>   
               <div class="product-item">
                 <div class="circle">
                   <div></div>
                   <div></div>
                   <div></div>
                 </div>
-                <img src="img/img-sedona 1.png" width="360" height="580" alt="" class="product-item-img">
+                <img src="img/img-pink.png" width="360" height="580" alt="" class="product-item-img">
                 <div class="product-item-info">
-                    <p class="product-item-info-heading">SEDONA</p>
-                    <p class="product-item-info-subtitle">Информационный сайт для туристов</p>
+                    <p class="product-item-info-heading">Pink App</p>
+                    <p class="product-item-info-subtitle">Продуктовый лендинг приложения для iOS и Android</p>
                     <button class="product-item-info-price">9 900 ₽</button>
                 </div>
               </div> 
@@ -106,27 +106,53 @@
                   <div></div>
                   <div></div>
                 </div>
-                <img src="img/img-sedona 1.png" width="360" height="580" alt="" class="product-item-img">
+                <img src="img/img-barbershop.png" width="360" height="580" alt="" class="product-item-img">
                 <div class="product-item-info">
-                    <p class="product-item-info-heading">SEDONA</p>
-                    <p class="product-item-info-subtitle">Информационный сайт для туристов</p>
+                    <p class="product-item-info-heading">Barbershop</p>
+                    <p class="product-item-info-subtitle">Сайт салона красоты. Для мужчин, да.</p>
                     <button class="product-item-info-price">9 900 ₽</button>
                 </div>
-              </div> 
+              </div>   
               <div class="product-item">
                 <div class="circle">
                   <div></div>
                   <div></div>
                   <div></div>
                 </div>
-                <img src="img/img-sedona 1.png" width="360" height="580" alt="" class="product-item-img">
+                <img src="img/img-mishka.png" width="360" height="580" alt="" class="product-item-img">
                 <div class="product-item-info">
-                    <p class="product-item-info-heading">SEDONA</p>
-                    <p class="product-item-info-subtitle">Информационный сайт для туристов</p>
+                    <p class="product-item-info-heading">MISHKA</p>
+                    <p class="product-item-info-subtitle">Интернет-магазин вязаных игрушек</p>
                     <button class="product-item-info-price">9 900 ₽</button>
                 </div>
-              </div>          
-            </div>
+              </div>
+              <div class="product-item">
+                <div class="circle">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <img src="img/img-aplus.png" width="360" height="580" alt="" class="product-item-img">
+                <div class="product-item-info">
+                    <p class="product-item-info-heading">A Plus</p>
+                    <p class="product-item-info-subtitle">Лендинг курсов повышения квалификации</p>
+                    <button class="product-item-info-price">9 900 ₽</button>
+                </div>
+              </div>   
+              <div class="product-item">
+                <div class="circle">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <img src="img/img-kvast.png" width="360" height="580" alt="" class="product-item-img">
+                <div class="product-item-info">
+                    <p class="product-item-info-heading">КВАСТ</p>
+                    <p class="product-item-info-subtitle">Промо-сайт производителя крафтового кваса</p>
+                    <button class="product-item-info-price">9 900 ₽</button>
+                </div>
+              </div>        
+            </div>            
             <ul class="product-navigation">
                 <li class="product-navigation-item product-navigation-item-active">1</li>
                 <li class="product-navigation-item">2</li>
@@ -136,8 +162,8 @@
         </div>
     </section>
     <section class="contacts">
-      <img src="img/map 1.png" width="1440" height="416" alt="map" class="maps">
-      <img src="img/map-marker 1.png" width="230" height="190" alt="map-marker" class="map-marker">
+      <img src="img/map.png" width="1440" height="416" alt="map" class="maps">
+      <img src="img/map-marker.png" width="230" height="190" alt="map-marker" class="map-marker">
       <div class="information">
         <p class="location-heading">NЁRDS DESIGN STUDIO</p>
         <p class="location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
