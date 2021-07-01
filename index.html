@@ -11,7 +11,7 @@
   <body>
       <header class="main">
         <div class="menu">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="logotip" class="logo">
+          <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="logotip" class="logo"></a>
           <ul class="menu-list">
             <li class="menu-list-items"><a href="#">СТУДИЯ</a></li>
             <li class="menu-list-items"><a href="#">КЛИЕНТЫ</a></li>
@@ -91,25 +91,24 @@
           </div>
         </section>
         <section class="partners">
-          <img src="img/partners/html_academy.svg" width="200" height="68" alt="html_academy" class="partners-img">
+          <a href="#"><img src="img/partners/html_academy.svg" width="200" height="68" alt="html_academy" class="partners-img"></a>
           <hr class="partners-line">
-          <img src="img/partners/borodinski.png" width="209" height="90" alt="borodinski" class="partners-img">
+          <a href="#"><img src="img/partners/borodinski.png" width="209" height="90" alt="borodinski" class="partners-img"></a>
           <hr class="partners-line">
-          <img src="img/partners/pink.png" width="185" height="52" alt="pink" class="partners-img">
+          <a href="#"><img src="img/partners/pink.png" width="185" height="52" alt="pink" class="partners-img"></a>
           <hr class="partners-line">
-          <img src="img/partners/mishka.png" width="173" height="84" alt="mishka" class="partners-img">
+          <a href="#"><img src="img/partners/mishka.png" width="173" height="84" alt="mishka" class="partners-img"></a>
         </section>
         <section class="contacts">
-          <img src="img/map.png" width="1440" height="416" alt="map" class="maps">
-          <img src="img/map-marker.png" width="230" height="190" alt="map-marker" class="map-marker">
+          <div id="map" class="location-map"></div>
           <div class="information">
             <p class="location-heading">NЁRDS DESIGN STUDIO</p>
             <p class="location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
             <p class="phone-numbers">тел. +7 (812) 275-75-75</p> 
             <button class="location-but">НАПИШИТЕ НАМ</button>
           </div>
-          <div class="pop-up-write-us">
-            <div class="write-us-colose"></div>
+          <div class="pop-up-write-us pop-up-write-us-noactive">
+            <button href="#" class="write-us-colose"></button>
             <p class="write-us-heading">Напишите нам</p>
             <form action="#" class="write-us-form">
               <div class="write-us-box">
@@ -140,5 +139,7 @@
           <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </footer>
+      <script src="js/script.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
   </body>
 </html>

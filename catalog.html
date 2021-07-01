@@ -39,8 +39,8 @@
               </div>
             </div>           
             <div class="price-range">
-              <div><label for="price-from">ОТ</label><input class="price-from-input" type="text" id="price-from" value="0"></div>
-              <div><label for="price-up-to">ДО</label><input class="price-from-input" type="text" id="price-up-to" value="15000"></div>
+              <div><label for="price-from">ОТ</label><input class="price-from-input" type="number" id="price-from" value="0"></div>
+              <div><label for="price-up-to">ДО</label><input class="price-from-input" type="number" id="price-up-to" value="15000"></div>
             </div>           
             <div class="grid-view-box">
               <p class="product-filter-text">СЕТКА:</p>
@@ -54,7 +54,7 @@
               <p class="product-filter-text">ОСОБЕННОСТИ:</p>
               <ul class="product-features">
                   <li class="product-features-item"><input class="filter-input-checkbox" type="checkbox" id="filter-input-checkbox1"><label for="filter-input-checkbox1">Слайдер</label></li>
-                  <li class="product-features-item"><input class="filter-input-checkbox" type="checkbox" id="filter-input-checkbox2"><label for="filter-input-checkbox2">Блок преимуществ</p></li>
+                  <li class="product-features-item"><input class="filter-input-checkbox" type="checkbox" id="filter-input-checkbox2"><label for="filter-input-checkbox2">Блок преимуществ</label></li>
                   <li class="product-features-item"><input class="filter-input-checkbox" type="checkbox" id="filter-input-checkbox3"><label for="filter-input-checkbox3">Новости</label></li>
                   <li class="product-features-item"><input class="filter-input-checkbox" type="checkbox" id="filter-input-checkbox4"><label for="filter-input-checkbox4">Галерея</label></li>
                   <li class="product-features-item"><input class="filter-input-checkbox" type="checkbox" id="filter-input-checkbox5"><label for="filter-input-checkbox5">Корзина</label></li>
@@ -69,8 +69,8 @@
                 <li class="sorting-option-item sorting-option-active"><a href="#">ПО ЦЕНЕ</a></li>
                 <li class="sorting-option-item"><a href="#">ПО ТИПУ</a></li>
                 <li class="sorting-option-item"><a href="#">ПО НАЗВАНИЮ</a></li>
-                <li class="sorting-option-waning"><a href="#">⯆</a></li>
-                <li class="sorting-option-increase"><a href="#">⯅</a></li>
+                <li class="sorting-option-waning"><a href="#"></a></li>
+                <li class="sorting-option-increase"><a href="#"></a></li>
               </ul>
             </div>
             <div class="product-list">
@@ -154,21 +154,39 @@
               </div>        
             </div>            
             <ul class="product-navigation">
-                <li class="product-navigation-item product-navigation-item-active">1</li>
-                <li class="product-navigation-item">2</li>
-                <li class="product-navigation-item">3</li>
-                <li class="product-navigation-next">СЛЕДУЮЩАЯ</li>
+                <li class="product-navigation-item product-navigation-item-active"><a href="#">1</a></li>
+                <li class="product-navigation-item"><a href="#">2</a></li>
+                <li class="product-navigation-item"><a href="#">3</a></li>
+                <li class="product-navigation-next"><a href="#">СЛЕДУЮЩАЯ</a></li>
             </ul>
         </div>
     </section>
     <section class="contacts">
-      <img src="img/map.png" width="1440" height="416" alt="map" class="maps">
-      <img src="img/map-marker.png" width="230" height="190" alt="map-marker" class="map-marker">
+      <div id="map" class="location-map"></div>
       <div class="information">
         <p class="location-heading">NЁRDS DESIGN STUDIO</p>
         <p class="location">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p> 
         <p class="phone-numbers">тел. +7 (812) 275-75-75</p> 
         <button class="location-but">НАПИШИТЕ НАМ</button>
+      </div>
+      <div class="pop-up-write-us pop-up-write-us-noactive">
+        <button href="#" class="write-us-colose"></button>
+        <p class="write-us-heading">Напишите нам</p>
+        <form action="#" class="write-us-form">
+          <div class="write-us-box">
+            <label class="write-us-lable" for="name">Ваше имя:</label>
+            <input class="write-us-input" type="text" id="name" placeholder="Имя Фамилия" required>
+          </div>            
+          <div class="write-us-box">
+            <label class="write-us-lable" for="e-mail">Ваш-email:</label>
+            <input class="write-us-input" type="email" id="e-mail" placeholder="email@example.com" required>
+          </div>            
+          <div class="write-us-box">
+            <label class="write-us-lable" for="letter">Текст письма:</label>
+            <textarea class="write-us-textarea" name="#" id="letter" cols="30" rows="10" placeholder="В свободной форме" required></textarea>
+          </div>               
+          <input class="write-us-buttom" type="submit">   
+        </form>        
       </div>
     </section>
     </main>
@@ -183,5 +201,7 @@
         <p class="footer-subtitle">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    <script src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
   </body>
 </html>
